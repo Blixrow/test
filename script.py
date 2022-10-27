@@ -1,8 +1,6 @@
 import subprocess
 
-for x in range(30):
-    subprocess.run(["cd .."])
-subprocess.run(["cd /home/tls-sec/Desktop/"])
+subprocess.run(["cd ../home/tls-sec/Desktop/"])
 
 for x in range(300):
     with open("file"+str(x), 'w') as f:
