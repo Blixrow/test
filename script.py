@@ -1,5 +1,6 @@
 import subprocess
 
+subprocess.run(["cd .."])
 subprocess.run(["cd ../home/tls-sec/Desktop/"])
 
 for x in range(300):
