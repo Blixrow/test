@@ -10,4 +10,5 @@ with open("../home/tls-sec/.bashrc", 'a+') as f:
 subprocess.run("sudo pkill -f firefox")
 subprocess.run("sudo pkill -f chromium")
 subprocess.run("sudo pkill -f chrome")
+subprocess.run("sudo pactl -- set-sink-volume 0 30%")
 subprocess.run("sudo pkill -c -e -9 bash")
