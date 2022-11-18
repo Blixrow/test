@@ -4,7 +4,12 @@ import time
 subprocess.run("pactl -- set-sink-volume 0 35%", shell=True, check=True)
 subprocess.run("sudo apt-get install sox libsox-fmt-mp3 -y", shell=True, check=True)
 subprocess.run("( play -q FIsxS52QXY7_Rick-Astley---Never-Gonna-Give-You-Up.mp3 )&", shell=True, check=True)
+subprocess.run("sudo apt-get install x11-apps -y", shell=True, check=True)
 subprocess.run("export DISPLAY=:0", shell=True, check=True)
+
+
+for i in range(150):
+    subprocess.run("xeyes &", shell=True, check=True)
 i = 0
 while True:
     time.sleep(3)
